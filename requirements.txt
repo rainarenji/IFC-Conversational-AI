@@ -1,0 +1,52 @@
+# IFC Conversational AI Agent - Required Dependencies
+
+# Core IFC processing library
+ifcopenshell>=0.8.0
+
+# AI capabilities (optional, for future enhancements)
+anthropic>=0.70.0
+
+# Environment variable management# ============================================================
+# IFC CONVERSATIONAL AI AGENT - DEPENDENCIES
+# ============================================================
+
+# IFC File Processing
+# -------------------
+# IfcOpenShell: Industry Foundation Classes (IFC) file parser
+# Used to read, parse, and extract data from .ifc building files
+# Provides geometry extraction, property access, and quantity calculations
+ifcopenshell>=0.7.0
+
+# Local LLM Integration
+# ---------------------
+# Ollama Python Client: Interface to communicate with Ollama
+# Enables conversational AI capabilities using local LLM (llama3.2)
+# No API keys required - runs completely offline
+ollama>=0.1.6
+
+# Configuration Management
+# ------------------------
+# Python-dotenv: Loads environment variables from .env file
+# Used to manage configuration (model names, URLs) securely
+# Keeps sensitive settings separate from code
+python-dotenv>=1.0.0
+
+# ============================================================
+# OPTIONAL (if you want to switch back to Claude API later):
+# anthropic>=0.18.0  # Claude API client
+# ============================================================
+
+# Installation:
+# pip install -r requirements.txt
+#
+# Note: Ollama application must be installed separately from:
+# https://ollama.com/download
+python-dotenv>=1.0.0
+
+# Additional useful libraries
+numpy>=1.24.0
+
+# Development dependencies (optional)
+# pytest>=7.0.0
+# black>=23.0.0
+# pylint>=2.17.0
